@@ -1,0 +1,126 @@
+body {
+    /* background-color: #3755be; */
+    background-color: white;
+}
+
+.main-content a {
+    text-decoration: none;
+}
+
+.main-content a:hover {
+    text-decoration: underline;
+}
+
+.navbar {
+    background-color: rgb(21, 27, 73);
+    opacity: 0.95;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Sidebar Contact Info */
+
+ul.contact-info {
+    margin-left: 1.0rem;
+    padding-top: 1.2rem;
+}
+
+li.contact-item {
+    position: relative;
+    margin-top: 0.2rem;
+}
+
+li.contact-item i, li.contact-item img {
+    margin-right: 0.5rem;
+}
+
+li.contact-item img {
+    position: relative;
+    top: -0.1rem;
+}
+
+li.contact-item > a {
+    text-decoration: none;
+}
+
+
+/* Navbar Contact Item */
+
+/*
+ul.nav-contact-info {
+    margin-left: 1.0rem;
+    color: $link-color;
+    hover-color: gray-;
+    transition: color .15s ease-in-out;
+}
+*/
+
+li.nav-contact-info {
+    color: white;
+    opacity: 0.75;
+    font-style: italic;
+}
+
+li.nav-contact-info i {
+    margin-right: 0.5rem;
+}
+
+/* for clickable items */
+
+li.nav-contact-item {
+    position: relative; /* so stretched links work */
+}
+
+li.nav-contact-item i, li.nav-contact-item img {
+    margin-right: 0.5rem;
+}
+
+li.nav-contact-item img {
+    position: relative;
+    top: -0.1rem;
+    opacity: 0.55;
+    transition: opacity .15s ease-in-out;
+}
+
+li.nav-contact-item:hover img {
+    opacity: 0.80;
+}
+
+/* Publications */
+
+ul {
+    --icon-space: 2em;
+}
+
+li.publication {
+    margin-bottom: 1em;
+}
+
+li.publication.award:before {
+    position: absolute;
+    display: inline-block;
+    margin-left: -1.5em;
+    margin-top: 0.3em;
+    width: 1em;
+    height: 1em;
+    content: "";
+    background-image: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" fill=\"%23cf0000\" class=\"bi bi-award-fill\" viewBox=\"0 0 16 16\"><path d=\"m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z\"/><path d=\"M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z\"/></svg>");
+    background-repeat: no-repeat;
+    background-size: 1rem 1rem;  
+    color: #cf0000; /* Note: color is embedded in the svg for the icon, so this has no effect */
+}
+
+.award-color {
+    color: #cf0000;
+}
+
+.award-indicator {
+    display: inline;
+}
+
+span.word-separator {
+    font-size: 1px;
+}
