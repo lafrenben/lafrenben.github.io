@@ -108,7 +108,7 @@ li.no-margin-label {
 
 .award {
     color: #cf0000;
-    font-style: normal; /* because some icons render strangely when italicized */
+    font-style: normal; /* because the unicode icon for special recognitions in reviewing render strangely when italicized */
 }
 
 span.word-separator {

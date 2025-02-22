@@ -3,6 +3,12 @@ body {
     background-color: white;
 }
 
+div.dont-hyphenate {
+    -webkit-hyphens:manual;
+    -moz-hyphens:manual;
+    hyphens:manual;
+}
+
 .main-content a {
     text-decoration: none;
 }
@@ -32,6 +38,7 @@ ul.contact-info {
 li.contact-item {
     position: relative;
     margin-top: 0.2rem;
+    width: max-content;
 }
 
 li.contact-item i, li.contact-item img {
@@ -47,6 +54,9 @@ li.contact-item > a {
     text-decoration: none;
 }
 
+li.contact-item > a:hover {
+    text-decoration: underline;
+}
 
 /* Navbar Contact Item */
 
