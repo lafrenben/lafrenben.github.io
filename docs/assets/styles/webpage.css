@@ -24,7 +24,8 @@ ul.no-bullets {
 /* Sidebar Contact Info */
 
 ul.contact-info {
-    margin-left: 1.0rem;
+    font-size: 0.95rem;
+    margin-left: 1rem;
     padding-top: 1.2rem;
 }
 
