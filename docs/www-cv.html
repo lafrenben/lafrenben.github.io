@@ -89,11 +89,39 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-auto pt-5 main-content">
-                <iframe class="shadow ms ms-lg-2 me me-lg-2 p-0" style="width: 8.5in; height: 80vh;" src="/cv.html" title="CV"></iframe>                 
+                <iframe id="cv-iframe" class="shadow p-0 object-fit-contain" style="width: 8.75in; height: 80vh;" src="/cv.html" title="CV"></iframe>
             </div>
         </div>
     </div>
 </section>
+
+<script>
+    function resizeIframe() {
+        const iframe = document.getElementById('cv-iframe');
+        const iframeContainer = iframe.parentElement;
+        const containerWidth = iframe.parentElement.clientWidth;
+        const originalWidth = 8.75 * 96; // 8.75 inches in pixels (1 inch = 96 pixels)
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+
+        if (containerWidth < originalWidth) {
+            const scale = containerWidth / originalWidth;
+            iframe.style.transform = `scale(${scale})`;
+            iframe.style.transformOrigin = 'top left';
+            iframe.style.width = `${originalWidth}px`;
+            let height = iframe.contentWindow.document.body.scrollHeight + 100;
+            iframe.style.height = height + 'px';
+            iframeContainer.style.height = (height + 100)*scale + 'px';
+        } else {
+            iframe.style.transform = 'scale(1)';
+            iframe.style.width = '8.75in';
+            iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 100) + 'px';
+            iframeContainer.style.height = (iframe.contentWindow.document.body.scrollHeight + 200) + 'px';
+        }
+    }
+
+    window.addEventListener('resize', resizeIframe);
+    window.addEventListener('load', resizeIframe);
+</script>
 
         <div class="container">
           <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
@@ -101,7 +129,7 @@
                 <div class="mb-3 mb-md-0 text-body-secondary">&copy; Ben Lafreniere, Last Updated 2025-02-24</div>
             </div>
           </footer>
-        </div>        
+        </div>
     </main>
 </body>
 </html>
