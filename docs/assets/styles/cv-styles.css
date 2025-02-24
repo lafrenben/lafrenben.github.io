@@ -1,11 +1,12 @@
 :root {
-    --left-margin: 1.0in;
+    --left-margin: 1.25in;
     --main-width: 6.5in;
 }
 
 body {
     width: 8.5in;
     margin: auto;
+    overflow-x: hidden;
     font-size: 11pt;
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
@@ -24,10 +25,9 @@ a:hover {
 }
 
 main {
-    position: relative;
-    left: 0.5in;
     width: var(--main-width);
-    margin: auto;
+    margin-left: var(--left-margin);
+    margin-right: 0;
 }
 
 h1 {
