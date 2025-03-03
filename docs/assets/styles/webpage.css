@@ -147,3 +147,7 @@ span.word-separator {
     width: 100%;
     height: auto;
 }
+
+.blog-post address {
+    margin-bottom: 0;
+}
