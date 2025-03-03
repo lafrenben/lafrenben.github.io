@@ -31,7 +31,7 @@
     <link href="/assets/styles/webpage.css" rel="stylesheet">
     <link href="/assets/styles/code-styles.css" rel="stylesheet">
 
-    <title>CV / benlafreniere.ca</title>
+    <title>Blog / benlafreniere.ca</title>
     
   </head>  
   <body>
@@ -71,14 +71,14 @@
                 
     
         <li class="nav-item">
-            <a class="nav-link" href="/blog.html">Blog</a>
+            <a class="nav-link active" aria-current="page" href="/blog.html">Blog</a>
         </li>
     
 
                 
     
         <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="/www-cv.html">CV</a>
+            <a class="nav-link" href="/www-cv.html">CV</a>
         </li>
     
 
@@ -95,41 +95,42 @@
 
 <section>
     <div class="container">
-        <div class="row justify-content-center pt-5">
-            <div class="col-auto pt-4 pb-0 main-content shadow" style="overflow: hidden;">
-                <iframe id="cv-iframe" class="p-0" style="display: block; width: 8.75in;" src="/cv.html" title="CV"></iframe>
+        <div class="row">
+            <div class="col-lg-4 pt-4">
+    <!-- Profile image used on lg and larger screens -->
+    <img src="/assets/images/ben.png" class="d-none d-lg-block img-fluid rounded-circle" alt="Ben Lafreniere">
+    <!-- Profile image used on x-small, small, and md screens -->
+    
+
+    <ul class="d-none d-lg-block no-bullets contact-info">
+        <li class="contact-item"><i class="bi bi-geo-alt-fill"></i><emph>Toronto, Ontario</li>
+        <li class="contact-item"><i class="bi bi-envelope-fill"></i>ben<span class="word-separator"> </span>[dot]<span class="word-separator"> </span>lafreniere<span class="word-separator"> </span>[at]<span class="word-separator"> </span>gmail<span class="word-separator"> </span>[dot]<span class="word-separator"> </span>com</li>
+        <li class="contact-item"><i class="bi bi-github"></i><a href="https://github.com/lafrenben" class="stretched-link">GitHub</a></li>
+        <li class="contact-item"><i class="bi bi-linkedin"></i><a href="https://linkedin.com/in/lafrenben" class="stretched-link">LinkedIn</a></li>
+        <li class="contact-item"><img src="/assets/images/orcid_icon.png" style="width:16px; margin-right: 0.45rem;"><a href="https://orcid.org/0000-0002-0546-0466" class="stretched-link">ORCID</a></li>
+        <li class="contact-item"><img src="/assets/images/google_scholar_icon_2.png" style="width:15px;"><a href="https://scholar.google.com/citations?user=hTH3h8AAAAAJ" class="stretched-link">Google Scholar</a></li>
+    </ul>
+</div>
+            <div class="col-lg-8 ps-4 ps-lg-3 pt-4 main-content">
+                
+                
+                    
+                        <h2>2025</h2>
+                        
+                    
+                    <div class="blog-snippet pt-2">
+    <small class="text-muted fs-6">February 28, 2025</small><br>
+    <h3>
+        <a href="https://www.benlafreniere.ca/blog/test.html" class="link-dark">Jump-to-Recipe: An LLM-powered AI assistant for recipes</a><br>
+    </h3>
+    <p>In this post, I'll demo an LLM-based user interface prototype I've been working on. The motivation for this project came while I was cooking – I had a recipe webpage loaded on my tablet, and I was trying to follow along but I kept getting distracted by video ads on the page. Even worse, the video ads would regularly reload and reflow the page, causing me to lose my place. Eventually, I got so frustrated that I paused the whole cooking project to copy and paste the recipe into a text file.</p>
+    <a href="https://www.benlafreniere.ca/blog/test.html">Read more...</a>
+</div>
+                
             </div>
         </div>
     </div>
 </section>
-
-<script>
-    function resizeIframe() {
-        const iframe = document.getElementById('cv-iframe');
-        const iframeContainer = iframe.parentElement;
-        const containerWidth = iframe.parentElement.clientWidth;
-        const originalWidth = 8.75 * 96; // 8.75 inches in pixels (1 inch = 96 pixels)
-        const windowHeight = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
-
-        if (containerWidth < originalWidth) {
-            const scale = containerWidth / originalWidth;
-            iframe.style.transform = `scale(${scale})`;
-            iframe.style.transformOrigin = 'top left';
-            iframe.style.width = `${originalWidth}px`;
-            let height = iframe.contentWindow.document.body.scrollHeight + 100;
-            iframe.style.height = height + 'px';
-            iframeContainer.style.height = (height + 100)*scale + 'px';
-        } else {
-            iframe.style.transform = 'scale(1)';
-            iframe.style.width = '8.75in';
-            iframe.style.height = (iframe.contentWindow.document.body.scrollHeight + 100) + 'px';
-            iframeContainer.style.height = (iframe.contentWindow.document.body.scrollHeight + 200) + 'px';
-        }
-    }
-
-    window.addEventListener('resize', resizeIframe);
-    window.addEventListener('load', resizeIframe);
-</script>
 
         <div class="container">
           <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">

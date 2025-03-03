@@ -135,3 +135,15 @@ li.publication.award:before {
 span.word-separator {
     font-size: 1px;
 }
+
+.blog-post img {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}
+
+.blog-post video {
+    margin-bottom: 1rem;
+    width: 100%;
+    height: auto;
+}

@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Additional meta tags -->
+    <meta property="og:url" content="https://benlafreniere.ca/"/>
+    <meta property="og:site_name" content="Ben Lafreniere"/>
+    <meta property="og:title" content="Ben Lafreniere"/>
+    <meta property="og:description" content="Ben Lafreniere is a Canadian computer scientist and researcher in the field of Human-Computer Interaction"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="en_CA"/>
+    <meta property="og:image" content="https://benlafreniere.ca/assets/images/ben.png" />
+    <!-- favicon stuff -->
+    <link rel="icon" type="image/png" href="/assets/images/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="MyWebSite" />
+    <link rel="manifest" href="/assets/images/site.webmanifest" />
+    <script src="/assets/js/disable-pwa-dialog.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link href="/assets/styles/webpage.css" rel="stylesheet">
+    <link href="/assets/styles/code-styles.css" rel="stylesheet">
+
+    <title>Jump-to-Recipe: An LLM-powered AI assistant for recipes / benlafreniere.ca</title>
+    
+  </head>  
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KE5S0KKMVF"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KE5S0KKMVF');
+    </script>
+    <main>
+        
+
+    
+
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow" aria-label="Navigation bar">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">Ben Lafreniere<span class="text-muted">, Ph.D.</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="d-block d-lg-none navbar-nav ms-auto mb-2 nav-contact-info">
+                <li class="nav-item nav-contact-info"><i class="bi bi-envelope-fill"></i>ben[dot]lafreniere[at]gmail[dot]com</li>
+            </ul>
+            <ul class="navbar-nav ms-auto mb-lg-0 ms-2">
+                
+    
+        <li class="nav-item">
+            <a class="nav-link" href="/">About</a>
+        </li>
+    
+
+                
+    
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/blog.html">Blog</a>
+        </li>
+    
+
+                
+    
+        <li class="nav-item">
+            <a class="nav-link" href="/www-cv.html">CV</a>
+        </li>
+    
+
+            </ul>
+            <ul class="d-block d-lg-none navbar-nav ms-auto mb-2 nav-contact-info">
+                <li class="nav-item nav-contact-item"><a href="https://github.com/lafrenben" class="nav-link stretched-link"><i class="bi bi-github"></i>GitHub</a></li>
+                <li class="nav-item nav-contact-item"><a href="https://linkedin.com/in/lafrenben" class="nav-link stretched-link"><i class="bi bi-linkedin"></i>LinkedIn</a></li>
+                <li class="nav-item nav-contact-item"><a href="https://orcid.org/0000-0002-0546-0466" class="nav-link stretched-link"><img src="/assets/images/orcid_icon_white.png" style="width:18px; margin-right: 0.4rem;">ORCID</a></li>
+                <li class="nav-item nav-contact-item"><a href="https://scholar.google.com/citations?user=hTH3h8AAAAAJ" class="nav-link stretched-link"><img src="/assets/images/google_scholar_icon_2_white.png" style="width:16px;">Google Scholar</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 pt-4">
+    <!-- Profile image used on lg and larger screens -->
+    <img src="/assets/images/ben.png" class="d-none d-lg-block img-fluid rounded-circle" alt="Ben Lafreniere">
+    <!-- Profile image used on x-small, small, and md screens -->
+    
+
+    <ul class="d-none d-lg-block no-bullets contact-info">
+        <li class="contact-item"><i class="bi bi-geo-alt-fill"></i><emph>Toronto, Ontario</li>
+        <li class="contact-item"><i class="bi bi-envelope-fill"></i>ben<span class="word-separator"> </span>[dot]<span class="word-separator"> </span>lafreniere<span class="word-separator"> </span>[at]<span class="word-separator"> </span>gmail<span class="word-separator"> </span>[dot]<span class="word-separator"> </span>com</li>
+        <li class="contact-item"><i class="bi bi-github"></i><a href="https://github.com/lafrenben" class="stretched-link">GitHub</a></li>
+        <li class="contact-item"><i class="bi bi-linkedin"></i><a href="https://linkedin.com/in/lafrenben" class="stretched-link">LinkedIn</a></li>
+        <li class="contact-item"><img src="/assets/images/orcid_icon.png" style="width:16px; margin-right: 0.45rem;"><a href="https://orcid.org/0000-0002-0546-0466" class="stretched-link">ORCID</a></li>
+        <li class="contact-item"><img src="/assets/images/google_scholar_icon_2.png" style="width:15px;"><a href="https://scholar.google.com/citations?user=hTH3h8AAAAAJ" class="stretched-link">Google Scholar</a></li>
+    </ul>
+</div>
+            <div class="col-lg-8 ps-4 ps-lg-3 pt-4 main-content blog-post">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/blog.html">Blog</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">February 28, 2025</li>
+                    </ol>
+                </nav>
+                <h1>
+                    Jump-to-Recipe: An LLM-powered AI assistant for recipes
+                </h1>
+                <span class="text-muted">
+                    By Ben Lafreniere, <em>~7 minute read</em>
+                </span>
+                <p>
+                    <p>In this post, I'll demo an LLM-based user interface prototype I've been working on. The motivation for this project came while I was cooking – I had a recipe webpage loaded on my tablet, and I was trying to follow along but I kept getting distracted by video ads on the page. Even worse, the video ads would regularly reload and reflow the page, causing me to lose my place. Eventually, I got so frustrated that I paused the whole cooking project to copy and paste the recipe into a text file.<!--more--></p>
+<p>That experience got me thinking – LLMs can read recipe webpages as well as humans, and once the information is extracted it could be presented exactly the way I want it.</p>
+<p>So I built <strong>Jump-to-Recipe</strong> – an LLM-powered AI assistant for recipes.</p>
+<p>The user experience is pretty simple. You paste a recipe URL into the interface and click 'Extract Recipe'. The system reads the page, pulls out the important info, and displays it in a consistent format:</p>
+<video autoplay loop muted playsinline>
+  <source src="/assets/blog/jump-to-recipe/j2r-extract.mp4" type="video/mp4">
+</video>
+
+<p>Now that I had an AI assistant capable of reading recipe webpages, I wanted to see how far I could push the concept.</p>
+<p>To enable users to ask questions about the recipe, or other info on the page, I added a chat feature. For example, you can ask the system to <em>“suggest improvements to the recipe, based on what's in the comments section”</em>:</p>
+<video autoplay loop muted playsinline>
+  <source src="/assets/blog/jump-to-recipe/j2r-chat-1.mp4" type="video/mp4">
+</video>
+
+<p>You can also request changes to the extracted recipe. A simple example is to <em>“double the recipe”</em>:</p>
+<video autoplay loop muted playsinline>
+  <source src="/assets/blog/jump-to-recipe/j2r-chat-2.mp4" type="video/mp4">
+</video>
+
+<p>The flexibility of this approach makes it really fun. Some other requests I've tried:</p>
+<ul>
+<li><em>Annotate the recipe with dairy-free options</em></li>
+<li><em>Add an emoji for each recipe ingredient</em></li>
+<li><em>Add an estimate of the time to perform each step of the recipe</em></li>
+<li><em>Produce a grocery list of ingredients for this recipe</em></li>
+</ul>
+<p>In the current prototype you have to type queries, but it would be pretty easy to add hands-free operation using off-the-shelf APIs for voice input and text-to-speech output. This would make the system even more useful while cooking, where it's common to have your hands dirty.</p>
+<h2>End user customization</h2>
+<p>The chat functionality is extremely flexible, but there are some modifications to recipes that I always want to see. As an example, I live in Canada, and products here are labeled in metric units, but it's pretty common to find recipes online that use US customary measures (a 12-oz can of tomato sauce is how many mL again?)</p>
+<p>So I added a feature to specify some standard annotations that apply to all extracted recipes: </p>
+<p><img alt="image" src="/assets/blog/jump-to-recipe/j2r-settings.png" /></p>
+<p>I've included the unit conversions, and also asked the system to annotate each step of the recipe with the ingredients needed at that step. But these requests are specified in natural language, so it would be super easy for a user to add additional items to meet their individual needs.</p>
+<p>I also added support for custom action buttons, to support common changes to a recipe. I added '0.5x' and '2x' buttons to adjust the yield of a recipe, and a 'No dairy' button to suggest dairy substitutions. Similar to the standard annotations, the 'code' for these button is basically just a natural language instruction. For example, the code for the '2x' button is as follows:</p>
+<pre class="codehilite"><code class="language-python">{
+  'type': 'button',
+  'label': '2x',
+  'request': 'Modify the ingredients and instructions to double the original recipe. Keep any annotations previously provided, modifying them appropriately.'
+}
+</code></pre>
+
+<p>Wiring up buttons to send natural-language instructions the LLM might seem like a hack, but it's actually an extremely extensible approach. You can imagine individual users adding their own buttons based on their needs.</p>
+<h2>Insights on building AI-powered user interfaces</h2>
+<p>This was a fun project to get my feet wet with building LLM-powered user interfaces, but what are some key lessons and takeaways?</p>
+<p><strong>Lesson 1: Don’t over fit to anticipated use cases.</strong> I originally considered using deterministic code for things like doubling the recipe, or providing unit conversions. But I quickly realized that it’s better to keep the approach general. In the end I made it so the AI model can transform the recipe based on any request, and the presentation format has very general 'annotation' fields associated with each ingredient and instruction. This enables the system to handle possibilities that me, as the developer, never anticipated.</p>
+<p><strong>Lesson 2: Make the conversation with the AI model the core of the interaction loop.</strong> All interactions (including clicks on the custom action buttons) are essentially just adding to a “conversation” with the LLM, which functions as the 'model' (in the model-view-controller sense) for the interface. The advantage of this approach is that it is really extensible. It also unifies UI interactions (like clicking an action button) and natural language queries. For example, if I accidentally clicked the action button to double the recipe, I could use a message like "undo that last change" to correct it. I believe that unifying natural language voice queries and UI interactions is really important as we think about how to enhance user interfaces with advanced AI. The downside of this approach is latency, since interactions that add to the conversation must function at LLM speeds. It's an interesting question of how you could extend this approach to also provide fast UI updates.</p>
+<h2>HCI research thoughts</h2>
+<p>This project is a bit of a provocation, because a lot of content on the web is not created with the experience of users as the top priority. Recipe web pages contain long intro sections for SEO purposes, and are filled with ads to monetize the content. I get that that's how you make money with web content in 2025, but if we're on the cusp of personal AI assistants that can read content as well as humans, and display it back to them just as they like, that model begins to break down. It's not hard to imagine a next-generation web browser powered by AI that stands between you and the web, and has <em>your</em> needs in mind. This isn't a new idea – there is a long history of work in the HCI and ASSETS research communities on adapting content for accessibility purposes, for example. But LLMs make this so easy, that it feels like we are at a turning point. Investigating the implications of these new capabilities (and building prototypes that push these boundaries) are compelling areas for research.</p>
+<p>Also interesting is the general model of a fixed and highly personalized UI on top of extremely variable data adapted from diverse formats and sources. How might we empower and suport end users in specifying these personalized UIs? And how do we mitigate the risks that can arise in this model? Because the user is not seeing the underlying content first-hand, there are risks that users could act on hallucinated or incorrect information. Finding ways to present users with information in the format they want while ensuring accuracy and preserving data provenance is another interesting problem.</p>
+<h2>Technical details</h2>
+<p>The architecture of the system is pretty straightforward. The front end UI is built with React and JavaScript. The backend is Python using FastAPI, OpenAI, and some Langchain modules for the web scraping.</p>
+<p>When a new recipe URL is entered, the system grabs the page HTML, and uses a custom prompt to the LLM to do the extraction. A conversation history with the LLM is started, including the page and extracted recipe, which grows with subsequent requests (including chat messages and clicks on the action buttons).</p>
+<p>For any given request, the LLM is prompted to reply with JSON in one of two formats – either a "structured recipe" JSON format that the front-end can render, or a "conversational response" JSON format which gets displayed in the conversation thread.</p>
+<p>The system uses OpenAI's gpt-4o-mini as the LLM. I had originally planned to switch to gpt-4o for deployment, but the mini model is actually good enough for this application, and its responsiveness enhances the user interaction.</p>
+<h2>Wrap Up + Links</h2>
+<p>Thanks for reading! If anyone is interested in trying the prototype out, the code is available on my github at <a href="https://github.com/lafrenben/recipe-assistant">lafrenben/recipe-assistant</a>.</p>
+<p>Thanks to Mark Parent, Jordan Wan, and Tovi Grossman for conversations and feedback while I was playing around on this project.</p>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <div class="container">
+          <footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top">
+            <div class="col-auto d-flex justify-content-center align-items-center">
+                <div class="mb-3 mb-md-0 text-body-secondary">&copy; Ben Lafreniere, Last Updated 2025-03-03</div>
+            </div>
+          </footer>
+        </div>
+    </main>
+</body>
+</html>
