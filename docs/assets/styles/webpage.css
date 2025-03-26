@@ -151,3 +151,7 @@ span.word-separator {
 .blog-post address {
     margin-bottom: 0;
 }
+
+.blog-snippet p {
+    margin-bottom: 0.3rem;
+}
